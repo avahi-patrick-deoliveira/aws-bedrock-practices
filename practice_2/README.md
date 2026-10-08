@@ -15,7 +15,8 @@
 | Opus 4.6 | `us.anthropic.claude-opus-4-6-v1` |
 
 ```bash
-source .venv/bin/activate
+cd practice_2
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python compare_models.py
 ```
@@ -27,7 +28,7 @@ Full outputs are saved in `results_practice_2.json`.
 ![Architecture diagram](diagrams/practice_2_architecture.png)
 
 Editable source: [`diagrams/practice_2_architecture.drawio`](diagrams/practice_2_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_2.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 

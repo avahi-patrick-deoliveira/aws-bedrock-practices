@@ -10,7 +10,8 @@
 - Each configuration ran 5 times. `top_p` and `top_k` were tested with the default temperature.
 
 ```bash
-source .venv/bin/activate
+cd practice_3
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python parameters.py
 ```
@@ -22,7 +23,7 @@ Full outputs are saved in `results_practice_3.json`.
 ![Architecture diagram](diagrams/practice_3_architecture.png)
 
 Editable source: [`diagrams/practice_3_architecture.drawio`](diagrams/practice_3_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_3.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 

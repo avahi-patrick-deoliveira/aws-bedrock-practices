@@ -29,3 +29,6 @@ credentials
 # Script output
 stream_output.txt
 agent.log
+
+# Diagram tooling
+.diagram-venv/

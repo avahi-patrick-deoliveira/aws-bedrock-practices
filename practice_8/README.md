@@ -9,7 +9,8 @@
 - Packages: `sacrebleu`, `rouge-score`, `bert-score`, `torch` (CPU)
 
 ```bash
-source .venv/bin/activate
+cd practice_8
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python evaluate.py   # answers + judge scores -> results_practice_8.json
 python report.py     # metrics, costs and report.html
@@ -35,7 +36,7 @@ flowchart LR
 ![Architecture diagram](diagrams/practice_8_architecture.png)
 
 Editable source: [`diagrams/practice_8_architecture.drawio`](diagrams/practice_8_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_8.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 
