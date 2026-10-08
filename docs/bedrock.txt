@@ -1,0 +1,9 @@
+Amazon Bedrock is a fully managed service that provides access to foundation models from several AI companies through a single API. Available providers include Anthropic, Meta, Cohere, Mistral AI, Stability AI and Amazon. You do not need to manage any infrastructure, and your prompts and data are not used to train the base models.
+
+Bedrock offers two main ways to call a model. The InvokeModel API sends a request in the native format of each model. The Converse API uses one common format for all models that support it, which makes it easier to switch between models. Both have streaming versions that return the response in pieces as it is generated.
+
+Cross-region inference profiles, whose model IDs start with a prefix such as us, route requests across several regions to improve availability and throughput. Some newer models can only be called through an inference profile and not with the base model ID.
+
+Amazon Titan Text Embeddings turns text into numeric vectors that capture its meaning. These vectors are used for semantic search and for retrieval augmented generation, known as RAG. In RAG, documents are split into chunks, each chunk is converted into an embedding, and the chunks most similar to the user question are given to the model as context for the answer.
+
+Knowledge Bases for Amazon Bedrock is a managed RAG feature. It connects to data sources such as S3, creates the embeddings and stores them in a vector database. Guardrails for Amazon Bedrock lets you filter harmful content, block certain topics and mask personal information. Pricing is based on the number of input and output tokens, with discounts available for provisioned throughput.

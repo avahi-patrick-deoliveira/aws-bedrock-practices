@@ -1,0 +1,9 @@
+AWS Lambda is a serverless compute service that runs code in response to events without requiring you to provision or manage servers. You upload your code as a function, and Lambda runs it only when it is triggered. You pay only for the compute time used, measured in milliseconds, and there is no charge when the code is not running.
+
+Lambda supports several runtimes, including Python, Node.js, Java, .NET, Go and Ruby. Container images up to 10 gigabytes can also be used. Each function has a configurable memory size from 128 megabytes up to 10,240 megabytes, and CPU power scales with the memory setting. The maximum execution time for a single invocation is 15 minutes.
+
+Functions can be triggered by many AWS services. Common triggers are API Gateway for HTTP requests, S3 for new or changed objects, SQS for queue messages, DynamoDB Streams for table changes, and EventBridge for scheduled or event-based rules. Functions can also be invoked directly through the Lambda API.
+
+A cold start happens when Lambda has to create a new execution environment before running the code. It adds latency to the first request, especially for large packages or runtimes such as Java. Provisioned Concurrency keeps environments initialized and ready, which reduces cold starts but adds cost. Reserved concurrency limits how many instances of a function can run at once.
+
+Lambda is a good fit for event-driven workloads, lightweight APIs, data processing pipelines and automation tasks. It is less suited to long-running jobs, which exceed the 15 minute limit, or to workloads that need constant high throughput on a fixed set of servers.
