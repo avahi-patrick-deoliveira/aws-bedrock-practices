@@ -85,10 +85,18 @@ class Diagram:
             self.box(label, x + 68, y - 46, 250, 40, LABEL + "align=left;")
         return obj
 
-    def edge(self, source, target, label="", dashed=False, both=False):
+    def junction(self, x, y):
+        """Small dot used to fan one arrow out to several targets without crossing icons."""
+        return self.box("", x, y, 10, 10,
+                        "ellipse;whiteSpace=wrap;html=1;fillColor=#545B64;strokeColor=#545B64;")
+
+    def edge(self, source, target, label="", dashed=False, both=False, arrow=True,
+             enter_left=False):
         e = Edge(page=self.page, source=source, target=target, label=label)
         e.waypoints = "orthogonal"
-        e.endArrow = "block"
+        if enter_left:  # force the arrow to reach the target's left side, at mid height
+            e.entryX, e.entryY = 0, 0.5
+        e.endArrow = "block" if arrow else "none"
         e.startArrow = "block" if both else "none"
         e.strokeColor = "#545B64"
         if dashed:
