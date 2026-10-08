@@ -17,6 +17,15 @@ python parameters.py
 
 Full outputs are saved in `results_practice_3.json`.
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_3_architecture.png)
+
+Editable source: [`diagrams/practice_3_architecture.drawio`](diagrams/practice_3_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_3.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Task 1 and 2: Temperature (5 runs each)
 
 | Temperature | Unique answers | Answers |
