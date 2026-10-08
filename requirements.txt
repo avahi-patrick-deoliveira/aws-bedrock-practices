@@ -1,0 +1,15 @@
+boto3
+numpy
+gradio
+
+# Practice 8 (evaluation metrics)
+sacrebleu
+rouge-score
+bert-score
+# torch is large. For CPU only use:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch
+
+# Architecture diagrams (tools/diagram_tools.py)
+drawpyo
+pillow

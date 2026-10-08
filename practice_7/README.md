@@ -9,7 +9,8 @@
 - Log: every run is written to the console and to `agent.log`
 
 ```bash
-source .venv/bin/activate
+cd practice_7
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python agent.py
 ```
@@ -35,7 +36,7 @@ flowchart TD
 ![Architecture diagram](diagrams/practice_7_architecture.png)
 
 Editable source: [`diagrams/practice_7_architecture.drawio`](diagrams/practice_7_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_7.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 
