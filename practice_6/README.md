@@ -11,7 +11,8 @@
 - Documents: `docs/s3.txt`, `docs/lambda.txt`, `docs/bedrock.txt` (short texts written for this practice)
 
 ```bash
-source .venv/bin/activate
+cd practice_6
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python rag.py      # command-line test with 3 questions
 python app.py      # web interface at http://127.0.0.1:7860
@@ -30,7 +31,7 @@ python app.py      # web interface at http://127.0.0.1:7860
 ![Architecture diagram](diagrams/practice_6_architecture.png)
 
 Editable source: [`diagrams/practice_6_architecture.drawio`](diagrams/practice_6_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_6.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 
