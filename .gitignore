@@ -25,3 +25,6 @@ credentials
 .vscode/
 .idea/
 .DS_Store
+
+# Script output
+stream_output.txt
