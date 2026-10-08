@@ -16,6 +16,15 @@ python streaming.py
 
 The script runs three demos: progress bar, live text saved to a file, and error handling.
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_4_architecture.png)
+
+Editable source: [`diagrams/practice_4_architecture.drawio`](diagrams/practice_4_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_4.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Task 1: Real-time token counter
 
 Each `contentBlockDelta` event carries a piece of text. The script counts the chunks and
