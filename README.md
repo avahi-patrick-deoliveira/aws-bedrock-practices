@@ -13,8 +13,7 @@ that explains what was done and what was observed.
 | 6 | Basic RAG with embeddings and a Gradio interface | [practice_6](practice_6) |
 | 7 | Function calling / tool use agent | [practice_7](practice_7) |
 | 8 | Model analysis and evaluation (LLM judge, metrics, report) | [practice_8](practice_8) |
-
-Practice 9 (fine-tuning and customization) is still in progress on its own branch.
+| 9 | Fine-tuning and customization (dataset, validation, cost, A/B plan) | [practice_9](practice_9) |
 
 ## Setup
 
