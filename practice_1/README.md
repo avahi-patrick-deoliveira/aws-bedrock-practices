@@ -10,7 +10,8 @@ Hands-on practice calling Anthropic Claude models through Amazon Bedrock with `b
 - Model: `us.anthropic.claude-sonnet-4-5-20250929-v1:0` (cross-region inference profile)
 
 ```bash
-source .venv/bin/activate
+cd practice_1
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python main.py
 ```
@@ -29,7 +30,7 @@ python main.py
 ![Architecture diagram](diagrams/practice_1_architecture.png)
 
 Editable source: [`diagrams/practice_1_architecture.drawio`](diagrams/practice_1_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_1.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 
