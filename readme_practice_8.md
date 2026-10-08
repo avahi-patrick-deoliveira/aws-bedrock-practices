@@ -30,6 +30,15 @@ flowchart LR
     C --> H
 ```
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_8_architecture.png)
+
+Editable source: [`diagrams/practice_8_architecture.drawio`](diagrams/practice_8_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_8.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Task 1: Benchmark with 50 questions
 
 `benchmark.json` has 50 questions, 10 in each of 5 domains: geography, science, history,
