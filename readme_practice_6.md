@@ -25,6 +25,15 @@ python app.py      # web interface at http://127.0.0.1:7860
 4. Re-rank the 6 chunks and keep the best 3.
 5. Send the 3 chunks and the question to Claude, which answers using only that context.
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_6_architecture.png)
+
+Editable source: [`diagrams/practice_6_architecture.drawio`](diagrams/practice_6_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_6.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Task 1: Load documents from text files
 
 `load_documents()` reads every `.txt` file in `docs/`. Result: 3 documents.

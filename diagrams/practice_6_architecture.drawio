@@ -1,0 +1,73 @@
+<mxfile host="Drawpyo" modified="2026-10-08T16:04:45" agent="Python 3.12, Drawpyo 0.23" version="21.6.5" type="device">
+  <diagram name="Page-1" id="139560910270448">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="139560905928352" value="Local dev (WSL)" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#7D8998;dashed=1;html=1;verticalAlign=top;align=left;spacingLeft=10;fontColor=#232F3E;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="20" y="60" width="280" height="590" as="geometry" />
+</mxCell>
+        <mxCell id="139560904196656" value="AWS Cloud - Account 964217566728 (Avahi Sandbox - 9)" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#232F3E;dashed=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;html=1;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="340" y="20" width="880" height="640" as="geometry" />
+</mxCell>
+        <mxCell id="139560904378608" value="Region us-east-1" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#147EBA;dashed=1;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;html=1;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="360" y="190" width="840" height="450" as="geometry" />
+</mxCell>
+        <mxCell id="139560904379232" value="" style="whiteSpace=wrap;rounded=0;fillColor=#232F3E;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.client;" vertex="1" parent="1">
+  <mxGeometry x="130" y="90" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="139560904379856" value="Developer" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="60" y="154" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="139560904380768" value="" style="whiteSpace=wrap;rounded=0;fillColor=#DD344C;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" vertex="1" parent="1">
+  <mxGeometry x="450" y="90" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="139560904381296" value="IAM user&lt;br&gt;patrick-sandbox" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="380" y="154" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="139560904382160" value="Gradio UI&lt;br&gt;127.0.0.1:7860" style="whiteSpace=wrap;rounded=1;fillColor=#F5F5F5;strokeColor=#666666;dashed=0;html=1;fontSize=11;fontColor=#333333;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="230" width="240" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="139560904382640" value="rag.py&lt;br&gt;load docs/*.txt, chunk (100 words, 20 overlap)&lt;br&gt;re-rank, build the answer prompt" style="whiteSpace=wrap;rounded=1;fillColor=#F5F5F5;strokeColor=#666666;dashed=0;html=1;fontSize=11;fontColor=#333333;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="340" width="240" height="70" as="geometry" />
+</mxCell>
+        <mxCell id="139560904383168" value="In-memory vector index (numpy)&lt;br&gt;cosine similarity, top 6 chunks" style="whiteSpace=wrap;rounded=1;fillColor=#FFF2CC;strokeColor=#D6B656;dashed=0;html=1;fontSize=10;fontColor=#7F6000;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="470" width="240" height="50" as="geometry" />
+</mxCell>
+        <mxCell id="139560904383696" value="" style="ellipse;whiteSpace=wrap;rounded=0;fillColor=#545B64;strokeColor=#545B64;dashed=0;html=1;" vertex="1" parent="1">
+  <mxGeometry x="440" y="370" width="10" height="10" as="geometry" />
+</mxCell>
+        <mxCell id="139560904384272" value="" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" vertex="1" parent="1">
+  <mxGeometry x="520" y="230" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="139560904384608" value="Amazon Titan Text Embeddings v2&lt;br&gt;amazon.titan-embed-text-v2:0" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=left;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="588" y="238" width="250" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="139560904385520" value="" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.machine_learning;" vertex="1" parent="1">
+  <mxGeometry x="520" y="480" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="139560904386048" value="Claude Haiku 4.5&lt;br&gt;re-ranks 6 chunks and writes the answer" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=left;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="588" y="488" width="250" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="139560904386816" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;dashed=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="139560904379232" target="139560904380768" value="access key">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139560909208032" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="139560904382160" target="139560904382640" value="question / answer">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139560904386768" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=block;endArrow=block;startFill=0;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="139560904382640" target="139560904383168" value="search">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139560904387440" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=none;strokeColor=#545B64;" edge="1" parent="1" source="139560904382640" target="139560904383696" value="">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139560904387584" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0;entryY=0.5;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="139560904383696" target="139560904384272" value="1. embed chunks and question">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="139560904387728" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0;entryY=0.5;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="139560904383696" target="139560904385520" value="2. re-rank, answer">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
