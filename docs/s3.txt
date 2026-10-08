@@ -1,9 +1,0 @@
-Amazon S3 (Simple Storage Service) is an object storage service offered by AWS. Data is stored as objects inside containers called buckets. Each object has a key, which is its unique name inside the bucket, plus the data itself and some metadata. S3 can store virtually unlimited amounts of data, and a single object can be up to 5 terabytes in size.
-
-S3 is designed for 99.999999999 percent durability, often called eleven nines. This is achieved by automatically storing copies of each object across multiple Availability Zones in a region. Availability depends on the storage class, and the Standard class is designed for 99.99 percent availability.
-
-S3 offers several storage classes to optimize cost. S3 Standard is used for frequently accessed data. S3 Standard-IA and One Zone-IA are cheaper for data that is accessed rarely but must be available quickly. S3 Glacier Instant Retrieval, Glacier Flexible Retrieval and Glacier Deep Archive are meant for archives, with lower storage prices but longer retrieval times. S3 Intelligent-Tiering moves objects between tiers automatically based on access patterns.
-
-Lifecycle policies let you automatically move objects to cheaper storage classes or delete them after a number of days. Versioning keeps multiple versions of an object, which protects against accidental deletion or overwrite. Buckets are private by default, and access is controlled with IAM policies, bucket policies and the Block Public Access setting.
-
-Common use cases for S3 include backups, static website hosting, data lakes for analytics, media storage and software distribution. S3 is also commonly used as the storage layer for machine learning datasets and model artifacts.

@@ -1,0 +1,109 @@
+<mxfile host="Drawpyo" modified="2026-10-08T16:07:01" agent="Python 3.12, Drawpyo 0.23" version="21.6.5" type="device">
+  <diagram name="Page-1" id="135456111177808">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="135456110341168" value="Local dev (WSL)" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#7D8998;dashed=1;html=1;verticalAlign=top;align=left;spacingLeft=10;fontColor=#232F3E;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="20" y="60" width="280" height="620" as="geometry" />
+</mxCell>
+        <mxCell id="135456106076336" value="AWS Cloud - Account 964217566728 (Avahi Sandbox - 9)" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#232F3E;dashed=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;html=1;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="340" y="20" width="1120" height="700" as="geometry" />
+</mxCell>
+        <mxCell id="135456106220096" value="Region us-east-1" style="whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=#147EBA;dashed=1;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;html=1;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="360" y="190" width="1080" height="510" as="geometry" />
+</mxCell>
+        <mxCell id="135456106220720" value="" style="whiteSpace=wrap;rounded=0;fillColor=#232F3E;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.client;" vertex="1" parent="1">
+  <mxGeometry x="130" y="90" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106221344" value="Developer" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="60" y="154" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106222160" value="" style="whiteSpace=wrap;rounded=0;fillColor=#DD344C;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" vertex="1" parent="1">
+  <mxGeometry x="450" y="90" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106222640" value="IAM user&lt;br&gt;patrick-sandbox" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="380" y="154" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106223504" value="generate_dataset.py&lt;br&gt;validate_dataset.py" style="whiteSpace=wrap;rounded=1;fillColor=#F5F5F5;strokeColor=#666666;dashed=0;html=1;fontSize=11;fontColor=#333333;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="235" width="240" height="50" as="geometry" />
+</mxCell>
+        <mxCell id="135456106224032" value="ab_test.py" style="whiteSpace=wrap;rounded=1;fillColor=#F5F5F5;strokeColor=#666666;dashed=0;html=1;fontSize=11;fontColor=#333333;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="305" width="240" height="40" as="geometry" />
+</mxCell>
+        <mxCell id="135456106224512" value="finetune.py&lt;br&gt;(create job)" style="whiteSpace=wrap;rounded=1;fillColor=#F5F5F5;strokeColor=#666666;dashed=0;html=1;fontSize=11;fontColor=#333333;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="388" width="240" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="135456106225040" value="finetune.py&lt;br&gt;(upload data)" style="whiteSpace=wrap;rounded=1;fillColor=#F5F5F5;strokeColor=#666666;dashed=0;html=1;fontSize=11;fontColor=#333333;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="548" width="240" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="135456106225568" value="boto3 - profile avahi-sandbox-9" style="whiteSpace=wrap;rounded=1;fillColor=#FFF2CC;strokeColor=#D6B656;dashed=0;html=1;fontSize=10;fontColor=#7F6000;align=center;" vertex="1" parent="1">
+  <mxGeometry x="40" y="620" width="240" height="40" as="geometry" />
+</mxCell>
+        <mxCell id="135456106226096" value="" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" vertex="1" parent="1">
+  <mxGeometry x="450" y="230" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106226624" value="Amazon Bedrock Runtime (Converse API)&lt;br&gt;Claude Sonnet 4.6: generates the synthetic dataset&lt;br&gt;Claude Haiku 4.5: baseline answers and judge" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="380" y="294" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106227536" value="" style="whiteSpace=wrap;rounded=0;fillColor=#DD344C;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" vertex="1" parent="1">
+  <mxGeometry x="800" y="230" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106228064" value="IAM role&lt;br&gt;BedrockFineTuneRole-support-style&lt;br&gt;trusts bedrock.amazonaws.com" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=left;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="868" y="238" width="250" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="135456106228976" value="" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" vertex="1" parent="1">
+  <mxGeometry x="800" y="380" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106229552" value="Model customization job&lt;br&gt;Amazon Nova Micro, 2 epochs" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=left;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="868" y="334" width="250" height="40" as="geometry" />
+</mxCell>
+        <mxCell id="135456106230464" value="" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.machine_learning;" vertex="1" parent="1">
+  <mxGeometry x="1150" y="380" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106231040" value="Custom model&lt;br&gt;support-style-nova-micro-ft" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=left;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="1218" y="388" width="250" height="44" as="geometry" />
+</mxCell>
+        <mxCell id="135456106231952" value="" style="whiteSpace=wrap;rounded=0;fillColor=#7AA116;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bucket;" vertex="1" parent="1">
+  <mxGeometry x="800" y="540" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106232528" value="S3 bucket&lt;br&gt;bedrock-practice-finetune-964217566728&lt;br&gt;train.jsonl, validation.jsonl, output/" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="730" y="604" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106233392" value="" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=1;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" vertex="1" parent="1">
+  <mxGeometry x="1150" y="540" width="60" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106348672" value="Provisioned Throughput (not created yet)&lt;br&gt;future target of ab_test.py variant B" style="text;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;dashed=0;html=1;align=center;verticalAlign=top;fontSize=11;fontColor=#232F3E;" vertex="1" parent="1">
+  <mxGeometry x="1080" y="604" width="200" height="60" as="geometry" />
+</mxCell>
+        <mxCell id="135456106349584" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;dashed=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106220720" target="135456106222160" value="access key">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456111011712" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106223504" target="135456106226096" value="1. generate examples">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456107826496" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;entryX=0;entryY=0.5;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106224032" target="135456106226096" value="A. baseline">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456106232816" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106225040" target="135456106231952" value="2. upload data">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456106350064" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106224512" target="135456106228976" value="3. create job">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456106350208" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106228976" target="135456106231952" value="4. read data, write output">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456106350352" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;dashed=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106228976" target="135456106227536" value="assumes (S3 access)">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456106350496" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106228976" target="135456106230464" value="5. produces">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="135456106350640" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;dashed=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="135456106230464" target="135456106233392" value="6. deploy (optional)">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
