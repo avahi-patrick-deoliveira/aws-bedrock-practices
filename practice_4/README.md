@@ -9,7 +9,8 @@
 - Prompt: "Explain what Amazon Bedrock is in 3 short paragraphs."
 
 ```bash
-source .venv/bin/activate
+cd practice_4
+source ../.venv/bin/activate
 export AWS_PROFILE=avahi-sandbox-9
 python streaming.py
 ```
@@ -21,7 +22,7 @@ The script runs three demos: progress bar, live text saved to a file, and error 
 ![Architecture diagram](diagrams/practice_4_architecture.png)
 
 Editable source: [`diagrams/practice_4_architecture.drawio`](diagrams/practice_4_architecture.drawio)
-(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_4.py` (needs
+(open it in draw.io). To rebuild the image: `PYTHONPATH=../tools python diagram.py` (needs
 `drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
 
 
