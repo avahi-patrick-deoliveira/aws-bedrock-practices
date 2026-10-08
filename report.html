@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Model evaluation report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>body{font-family:sans-serif;max-width:1000px;margin:2rem auto;padding:0 1rem}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:6px;text-align:right}
+th:first-child,td:first-child{text-align:left}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+</style></head><body>
+<h1>Model evaluation report</h1>
+<p>50 questions, 5 domains, 3 models. Judge: Claude Sonnet 4.6.</p>
+<table><tr><th>Model</th><th>Correct.</th><th>Complete.</th><th>Concise.</th><th>BLEU</th><th>ROUGE-1</th>
+<th>ROUGE-L</th><th>BERTScore</th><th>Latency (s)</th><th>USD / 1000 q</th></tr><tr><td>haiku-4.5</td><td>4.94</td><td>4.94</td><td>3.64</td><td>0.16</td><td>0.41</td><td>0.39</td><td>0.85</td><td>1.00</td><td>0.27</td></tr><tr><td>sonnet-4.6</td><td>5.00</td><td>5.00</td><td>3.78</td><td>0.12</td><td>0.43</td><td>0.39</td><td>0.84</td><td>1.73</td><td>0.79</td></tr><tr><td>opus-4.6</td><td>5.00</td><td>5.00</td><td>4.12</td><td>0.17</td><td>0.51</td><td>0.47</td><td>0.85</td><td>2.24</td><td>1.21</td></tr></table>
+<div class="grid"><canvas id="quality"></canvas><canvas id="auto"></canvas>
+<canvas id="domain"></canvas><canvas id="latency"></canvas><canvas id="cost"></canvas></div>
+<script>new Chart(document.getElementById('quality'), {
+  type: 'bar', data: {labels: ["haiku-4.5", "sonnet-4.6", "opus-4.6"], datasets: [{"label": "correctness", "data": [4.94, 5, 5], "backgroundColor": "#4e79a7"}, {"label": "completeness", "data": [4.94, 5, 5], "backgroundColor": "#f28e2b"}, {"label": "conciseness", "data": [3.64, 3.78, 4.12], "backgroundColor": "#59a14f"}]},
+  options: {plugins: {title: {display: true, text: 'LLM judge scores (1 to 5)'}},
+             scales: {y: {beginAtZero: true, title: {display: true, text: ''}}}}});
+new Chart(document.getElementById('auto'), {
+  type: 'bar', data: {labels: ["haiku-4.5", "sonnet-4.6", "opus-4.6"], datasets: [{"label": "bleu", "data": [0.16, 0.119, 0.167], "backgroundColor": "#4e79a7"}, {"label": "rouge1", "data": [0.406, 0.43, 0.512], "backgroundColor": "#f28e2b"}, {"label": "rougeL", "data": [0.391, 0.391, 0.473], "backgroundColor": "#59a14f"}, {"label": "bertscore", "data": [0.849, 0.836, 0.848], "backgroundColor": "#e15759"}]},
+  options: {plugins: {title: {display: true, text: 'Automatic metrics (0 to 1)'}},
+             scales: {y: {beginAtZero: true, title: {display: true, text: ''}}}}});
+new Chart(document.getElementById('domain'), {
+  type: 'bar', data: {labels: ["aws_tech", "geography", "history", "math_logic", "science"], datasets: [{"label": "haiku-4.5", "data": [5, 5, 4.7, 5, 5], "backgroundColor": "#4e79a7"}, {"label": "sonnet-4.6", "data": [5, 5, 5, 5, 5], "backgroundColor": "#f28e2b"}, {"label": "opus-4.6", "data": [5, 5, 5, 5, 5], "backgroundColor": "#59a14f"}]},
+  options: {plugins: {title: {display: true, text: 'Judge correctness by domain (1 to 5)'}},
+             scales: {y: {beginAtZero: true, title: {display: true, text: ''}}}}});
+new Chart(document.getElementById('latency'), {
+  type: 'bar', data: {labels: ["haiku-4.5", "sonnet-4.6", "opus-4.6"], datasets: [{"label": "seconds", "data": [1.0, 1.73, 2.24], "backgroundColor": "#4e79a7"}]},
+  options: {plugins: {title: {display: true, text: 'Average latency'}},
+             scales: {y: {beginAtZero: true, title: {display: true, text: 'seconds'}}}}});
+new Chart(document.getElementById('cost'), {
+  type: 'bar', data: {labels: ["haiku-4.5", "sonnet-4.6", "opus-4.6"], datasets: [{"label": "USD", "data": [0.27, 0.788, 1.207], "backgroundColor": "#f28e2b"}]},
+  options: {plugins: {title: {display: true, text: 'Cost per 1,000 questions (answers only)'}},
+             scales: {y: {beginAtZero: true, title: {display: true, text: 'USD'}}}}});</script></body></html>
