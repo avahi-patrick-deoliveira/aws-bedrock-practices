@@ -22,6 +22,15 @@ python compare_models.py
 
 Full outputs are saved in `results_practice_2.json`.
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_2_architecture.png)
+
+Editable source: [`diagrams/practice_2_architecture.drawio`](diagrams/practice_2_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_2.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Task 1: Run the code with different prompts
 
 | Type | Prompt |
