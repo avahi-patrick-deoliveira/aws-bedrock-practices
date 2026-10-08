@@ -24,6 +24,15 @@ python main.py
 | `main.py` / `invoke_claude.py` | Minimal `invoke_model` example |
 | `experiments.py` | Runs the exercises below and writes `results.json` |
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_1_architecture.png)
+
+Editable source: [`diagrams/practice_1_architecture.drawio`](diagrams/practice_1_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_1.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Exercises
 
 ### 1. Run the code and observe the response
