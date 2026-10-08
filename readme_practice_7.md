@@ -30,6 +30,15 @@ flowchart TD
     G -.-> L
 ```
 
+## Architecture
+
+![Architecture diagram](diagrams/practice_7_architecture.png)
+
+Editable source: [`diagrams/practice_7_architecture.drawio`](diagrams/practice_7_architecture.drawio)
+(open it in draw.io). To rebuild the image: `python scripts/diagram_practice_7.py` (needs
+`drawpyo` and `pillow`; rendering uses headless Microsoft Edge and needs internet access).
+
+
 ## Task 1: Complete tool calling cycle with multiple iterations
 
 `run_agent()` repeats this loop, up to 6 times:
