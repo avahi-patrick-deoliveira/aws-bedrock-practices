@@ -1,0 +1,9 @@
+{"time": "2026-10-09T11:59:36+00:00", "severity": "HIGH", "user_id": "bob", "reason": "prompt_injection", "detail": "matched: ignore (all |any |the )?(previous|prior|above) (instructions|rules|prompts?)"}
+{"time": "2026-10-09T11:59:36+00:00", "severity": "MEDIUM", "user_id": "bob", "reason": "pii_in_input", "detail": "found email, credit_card"}
+{"time": "2026-10-09T11:59:36+00:00", "severity": "HIGH", "user_id": "bob", "reason": "toxic_input:model_filter", "detail": "score 1.0"}
+{"time": "2026-10-09T11:59:36+00:00", "severity": "CRITICAL", "user_id": "bob", "reason": "repeated_violations", "detail": "3 blocked requests from the same user"}
+{"time": "2026-10-09T11:59:37+00:00", "severity": "HIGH", "user_id": "carol", "reason": "toxic_input:hate", "detail": "score 0.9"}
+{"time": "2026-10-09T11:59:37+00:00", "severity": "HIGH", "user_id": "bob", "reason": "prompt_injection", "detail": "matched: ignore (all |any |the )?(previous|prior|above) (instructions|rules|prompts?)"}
+{"time": "2026-10-09T11:59:37+00:00", "severity": "MEDIUM", "user_id": "carol", "reason": "input_too_long", "detail": "1200 characters (limit 1000)"}
+{"time": "2026-10-09T11:59:52+00:00", "severity": "LOW", "user_id": "dave", "reason": "rate_limited", "detail": "retry in 44.8s"}
+{"time": "2026-10-09T11:59:52+00:00", "severity": "LOW", "user_id": "dave", "reason": "rate_limited", "detail": "retry in 44.8s"}
