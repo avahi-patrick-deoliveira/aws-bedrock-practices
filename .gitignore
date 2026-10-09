@@ -32,3 +32,5 @@ agent.log
 
 # Diagram tooling
 .diagram-venv/
+
+extra_practice_10/ml_guardrail/data/*.parquet
